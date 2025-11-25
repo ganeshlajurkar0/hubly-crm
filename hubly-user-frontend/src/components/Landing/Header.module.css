@@ -1,0 +1,417 @@
+.hero {
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  padding: 80px 0;
+}
+
+.header {
+  background-color: #f8f9fa;
+  padding: 16px 0;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #184e7f;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo svg {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #184e7f;
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.heroText h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroText p {
+  font-size: 18px;
+  color: #6B7280;
+  margin-bottom: 32px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btnPrimary {
+  background: #1E3A8A;
+  color: white;
+}
+
+.btnPrimary:hover {
+  background: #1E40AF;
+}
+
+.btnSecondary {
+  background: white;
+  color: #1E3A8A;
+  border: 2px solid #1E3A8A;
+}
+
+.btnSecondary:hover {
+  background: #EFF6FF;
+}
+
+.btnLogin {
+  color: #184e7f;
+  background-color: transparent;
+  border: 1px solid #e9ecef;
+}
+
+.btnLogin:hover {
+  background-color: #f0f5fa;
+  border-color: #184e7f;
+}
+
+.btnSignup {
+  color: white;
+  background-color: #244779;
+  border: 1px solid #244779;
+}
+
+.btnSignup:hover {
+  background-color: #1a3563;
+  border-color: #1a3563;
+}
+
+.heroImage {
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.mainImage {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* User Badge - Top Right */
+.userBadge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+
+.badgeAvatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #E5E7EB;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.badgeAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badgeInfo {
+  line-height: 1.3;
+}
+
+.badgeText {
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.badgeAction {
+  color: #3B82F6;
+  font-weight: 400;
+}
+
+.badgeTime {
+  font-size: 10px;
+  color: #9CA3AF;
+}
+
+/* Calendar Widget - Bottom Left */
+.calendarWidget {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 280px;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.calendarMonth {
+  font-weight: 600;
+  color: #1F2937;
+  font-size: 15px;
+}
+
+.calendarNav {
+  display: flex;
+  gap: 6px;
+}
+
+.calendarNav button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #F3F4F6;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.calendarDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 12px;
+  color: #9CA3AF;
+  font-weight: 500;
+}
+
+.calendarDates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+  font-size: 14px;
+  color: #4B5563;
+}
+
+.calendarDates div {
+  padding: 8px;
+}
+
+.selectedDate {
+  background: #2C5F7C;
+  color: white !important;
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+.calendarTime {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.timeLabel {
+  font-size: 13px;
+  color: #6B7280;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.timeSelector {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.timeSelector input {
+  border: 1px solid #E5E7EB;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100px;
+  font-weight: 500;
+}
+
+.timeSelector button {
+  padding: 8px 14px;
+  border: 1px solid #E5E7EB;
+  background: #F9FAFB;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #9CA3AF;
+}
+
+.timeSelector button.timeActive {
+  background: white;
+  color: #1F2937;
+}
+
+/* Sales Widget - Bottom Right */
+.salesWidget {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 220px;
+}
+
+.salesLabel {
+  font-size: 11px;
+  color: #9CA3AF;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.salesAmount {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 6px;
+}
+
+.salesGrowth {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.salesGrowth span {
+  color: #10B981;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.salesChart {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 70px;
+}
+
+.salesChart div {
+  background: linear-gradient(to top, #10B981, #34D399);
+  width: 100%;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+  }
+
+  .heroText h1 {
+    font-size: 36px;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+  }
+
+  .btn {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .userBadge {
+    font-size: 9px;
+    padding: 6px 10px;
+  }
+
+  .calendarWidget {
+    width: 240px;
+    padding: 15px;
+  }
+
+  .salesWidget {
+    width: 180px;
+    padding: 14px;
+  }
+
+  .salesAmount {
+    font-size: 22px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .navButtons {
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
